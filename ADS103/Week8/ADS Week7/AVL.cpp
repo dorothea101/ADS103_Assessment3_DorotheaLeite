@@ -139,12 +139,12 @@ Node* AVL::balance(Node* parent)
 
 }
 
-Node* AVL::insertAVL(Node* parent, Node* newStudent)//where to put new node
+Node* AVL::insertAVL(Node* parent, Node* newNumber)//where to put new node
 {
     //if sub tree empty this becomes the parent
     if (parent == NULL)
     {
-        parent = newStudent;
+        parent = newNumber;
 
         return parent;
     }
