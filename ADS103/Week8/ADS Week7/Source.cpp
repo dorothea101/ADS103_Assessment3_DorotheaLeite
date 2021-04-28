@@ -58,7 +58,7 @@ void main() {
 	}
 	//NOW WE WRITE, BUT WHERE AND WHY?
 	
-	bst1.show(bst1.root);
+	avl2.show(avl2.root);     //this was bst1, changed it    also added all numbers into input folder
 
 
 

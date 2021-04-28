@@ -1,4 +1,8 @@
 #include "BST.h"
+#include <fstream>    //Added this in, for stream
+
+ofstream writeFile;      //Added this for writeFile, now the only place I have written new code , is the breadth-first
+//code from week 9, line 159
 
 void BST::insert(Node* newNumber)
 {
@@ -168,18 +172,21 @@ void BST::show(Node* p)
 
 	int previousOutputLevel = -1;
 
+
+	writeFile.open("output-q1-a2.txt");  //Added in the Output -write file here
+
 	while (q.empty() == false)
 	{
 		//print front of queue and remove it from queue
 		LevelNode node = q.front();
 		if (node.level != previousOutputLevel)
 		{
-			cout << endl;
-			cout << node.level << "- ";
+			writeFile << endl;                     //the cout, changed to writeFile
+			writeFile << node.level << "- ";      // cout, changed to writeFile
 			previousOutputLevel = node.level;
 
 		}
-		cout << node.number->ID << ":";
+		writeFile << node.number->ID << ":";     //cout changed to writeFile
 		q.pop();
 
 		/*Enque Left Child*/
