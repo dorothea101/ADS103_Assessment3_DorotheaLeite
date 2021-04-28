@@ -21,7 +21,7 @@ void main() {
 	bst1.insert(new Node(7777));
 	bst1.insert(new Node(4343));
 
-
+	bst1.show(bst1.root);
 
 
 
@@ -83,7 +83,7 @@ void main() {
 		cout << "Cannot find id 4343 in avl1 tree" << endl;
 
 
-
+	bst1.show(bst1.root);
 
 	system("pause");
 }

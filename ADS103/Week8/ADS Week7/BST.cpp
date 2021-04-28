@@ -150,7 +150,52 @@ void BST::postOrderTraversal(Node* current)
 		cout << current->ID << " "  << endl;
 	}
 
-}//now go back to source.cpp
+}
+
+//https://www.geeksforgeeks.org/level-order-tree-transversal/
+void BST::show(Node* p)
+{
+	//Base Case
+	if (root == NULL)
+		return;
+
+	//Create an empty queue for level order transversal
+	queue<LevelNode> q;
+
+	//Enqueue root and initialize height
+	q.push(LevelNode(root, 0));
+
+
+	int previousOutputLevel = -1;
+
+	while (q.empty() == false)
+	{
+		//print front of queue and remove it from queue
+		LevelNode node = q.front();
+		if (node.level != previousOutputLevel)
+		{
+			cout << endl;
+			cout << node.level << "- ";
+			previousOutputLevel = node.level;
+
+		}
+		cout << node.number->ID << ":";
+		q.pop();
+
+		/*Enque Left Child*/
+		if (node.number->leftChild != NULL)
+			q.push(LevelNode(node.number->leftChild, node.level + 1));
+
+
+		/*Enqueue Right Child*/
+		if (node.number->rightChild != NULL)
+			q.push(LevelNode(node.number->rightChild, node.level+1));
+
+
+
+	}
+}
+//now go back to source.cpp
 
 /*void preOrderTraversal(StudentNode* current)
 {
