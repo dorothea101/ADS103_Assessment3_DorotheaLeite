@@ -172,7 +172,7 @@ void BST::show(Node* p)
 
 	int previousOutputLevel = -1;
 
-
+	//NEED TO WRITEFILE AND OPEN!!!!!!!!!!!!!
 	writeFile.open("output-q1-a2.txt");  //Added in the Output -write file here
 
 	while (q.empty() == false)
