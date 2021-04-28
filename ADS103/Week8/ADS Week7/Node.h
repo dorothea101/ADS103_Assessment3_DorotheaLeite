@@ -8,10 +8,10 @@ class Node
 {
 public:
 	int ID;
-	string name;
+	
 	Node* leftChild;
 	Node* rightChild;
 
-	Node(int ID, string name);
+	Node(int ID);
 };
 

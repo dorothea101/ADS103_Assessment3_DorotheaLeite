@@ -83,7 +83,7 @@ Node* BST::search(int ID, bool showSearchPath)
 
 
 		if (showSearchPath)//IS TRUE,THEN COUT ,only if this is to true, that you will see this line
-			cout << current->ID << " " << current->name << endl;
+			cout << current->ID << " " << current->ID << endl;
 
 		//havn't found it yet,lefts explore left or right down the tree
 		//So do we go left or right?
@@ -110,6 +110,7 @@ Node* BST::search(int ID, bool showSearchPath)
 	return current;//should be pointing at the match in tree :D
 	//now lets test this stuff out, go to source.cpp
 }
+
 //got this one node and it explores down the left, then it outputs itself //9 then explores down right//7
 //outputs tree in ascending order
 void BST::inOrderTraversal(Node* current)
@@ -120,7 +121,7 @@ void BST::inOrderTraversal(Node* current)
 	{
 		//smallest to largest
 		inOrderTraversal(current->leftChild);  //line a
-		cout << current->ID << " " << current->name << endl;//9
+		cout << current->ID << " " << endl;//9
 		inOrderTraversal(current->rightChild); //7//and line b
 
 	}
@@ -134,7 +135,7 @@ void BST::preOrderTraversal(Node* current)//OUTPUT ME, THEN GO LEFT, THEN GO RIG
 	if (current != NULL)
 	{
 
-		cout << current->ID << " " << current->name << endl;
+		cout << current->ID << " " << endl;
 		preOrderTraversal(current->leftChild);
 		preOrderTraversal(current->rightChild);
 	}
@@ -146,7 +147,7 @@ void BST::postOrderTraversal(Node* current)
 	{
 		postOrderTraversal(current->leftChild);
 		postOrderTraversal(current->rightChild);
-		cout << current->studentID << " " << current->name << endl;
+		cout << current->ID << " "  << endl;
 	}
 
 }//now go back to source.cpp

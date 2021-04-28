@@ -1,7 +1,7 @@
 #include "Node.h"
 
-Node::Node(int ID, string name)
+Node::Node(int ID)
 {
 	this->ID = ID;
-	this->name = name;
+	
 }

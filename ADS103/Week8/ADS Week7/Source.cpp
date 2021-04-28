@@ -12,14 +12,14 @@ void main() {
 	//give back my memory address and point to that
 	bst1.insert(sNodePtr);   //now i want to insert student, but it takes a student pointer,//3 //5
 		//now there are 2 ways i can go about this*/
-	bst1.insert(new Node(3433, "Jeff"));
-	bst1.insert(new Node(2222, "Bill"));
-	bst1.insert(new Node(1221, "Trevor"));
-	bst1.insert(new Node(4533, "Uncle"));
-	bst1.insert(new Node(3333, "Adam"));
-	bst1.insert(new Node(6666, "Bridge"));
-	bst1.insert(new Node(7777, "Bam"));
-	bst1.insert(new Node(4343, "Bucket"));
+	bst1.insert(new Node(3433));// "Jeff"));
+	bst1.insert(new Node(2222)); //"Bill"));
+	bst1.insert(new Node(1221)); //"Trevor"));
+	bst1.insert(new Node(4533));//"Uncle"));
+	bst1.insert(new Node(3333));// "Adam"));
+	bst1.insert(new Node(6666));// "Bridge"));
+	bst1.insert(new Node(7777));
+	bst1.insert(new Node(4343));
 
 
 
@@ -31,7 +31,7 @@ void main() {
 	if (sPtr == NULL) //THIS IS IF IT DOESNT FIND IT OR MY TREE IS EMPTY
 		cout << "Cannot find a student matching id 1221" << endl;
 	else
-		cout << "Found " << sPtr->name << " with id 1221" << endl;
+		cout << "Found " << " with id 1221" << endl;
 
 
 
@@ -58,16 +58,16 @@ void main() {
 
 	AVL avl1;
 	avl1.displayRotations = true;
-	avl1.insert(new Node(2333, "Jeff"));
-	avl1.insert(new Node(2222, "Bill"));
-	avl1.insert(new Node(1221, "Trevor"));
+	avl1.insert(new Node(2333));
+	avl1.insert(new Node(2222));
+	avl1.insert(new Node(1221));
 	cout << "Tree height thus far: " << avl1.height(avl1.root) << endl;
-	avl1.insert(new Node(4533, "Uncle"));
-	avl1.insert(new Node(3333, "Adam"));
-	avl1.insert(new Node(6666, "Bridge"));
-	avl1.insert(new Node(7777, "Bam"));
-	avl1.insert(new Node(4343, "Bucket"));
-	cout << "AVL ROOT: " << avl1.root->name << "  " << avl1.root->ID << endl;
+	avl1.insert(new Node(4533));
+	avl1.insert(new Node(3333));
+	avl1.insert(new Node(6666));
+	avl1.insert(new Node(7777));
+	avl1.insert(new Node(4343));
+	cout << "AVL ROOT: " << "  " << avl1.root->ID << endl;
 	cout << "Students AVL inorder transversal" << endl;
 	cout << "================================" << endl;
 	avl1.inOrderTraversal(avl1.root);
@@ -78,7 +78,7 @@ void main() {
 	cout << "try to find student matching id 4343..." << endl;
 	Node* sPtr2 = avl1.search(4343, true);
 	if (sPtr != NULL)
-		cout << "Found" << sPtr2->name << " with id 4343" << endl;
+		cout << "Found" << " with id 4343" << endl;
 	else
 		cout << "Cannot find id 4343 in avl1 tree" << endl;
 

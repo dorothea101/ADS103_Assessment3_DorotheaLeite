@@ -44,7 +44,7 @@ Node* AVL::RRrotation(Node* parent)//A
     parent->rightChild = temp->leftChild;
     temp->leftChild = parent;//SETTING IT TO OLD PARENT
     if (displayRotations)
-        cout << "RR rotation on " << parent->name << endl;
+       
 
     return temp;
 
@@ -56,7 +56,7 @@ Node* AVL::LLrotation(Node* parent)
     parent->leftChild = temp->rightChild;
     temp->rightChild = parent;
     if (displayRotations)
-        cout << "LL rotation on " << parent->name << endl;
+        cout << "LL rotation on "  << endl;
 
     return temp;
 
@@ -73,7 +73,7 @@ Node* AVL::LRrotation(Node* parent)
     Node* temp = parent->leftChild;//B
     parent->leftChild = RRrotation(temp);
     if (displayRotations)
-        cout << "LR rotation on " << parent->name << endl;
+        cout << "LR rotation on "  << endl;
     return LLrotation(parent);
 
 
@@ -84,7 +84,7 @@ Node* AVL::RLrotation(Node* parent)
     Node* temp = parent->rightChild;//B
     parent->rightChild = LLrotation(temp);
     if (displayRotations)
-        cout << "RL rotation on " << parent->name << endl;
+        cout << "RL rotation on " << endl;
     return RRrotation(parent);
 
 }
@@ -166,7 +166,7 @@ Node* AVL::insertAVL(Node* parent, Node* newNumber)//where to put new node
 
 void AVL::insert(Node* newNumber)
 {
-    cout << "Inserting  " << newNumber->name << newNumber->ID << endl;
+    cout << "Inserting  "<< newNumber->ID << endl;
     root = insertAVL(root, newNumber);
     cout << endl;
 }
