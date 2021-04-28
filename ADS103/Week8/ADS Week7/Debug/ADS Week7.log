@@ -1,0 +1,15 @@
+﻿  AVL.cpp
+D:\Torrens University\ADS103\Week8\ADS Week7\AVL.cpp(154,9): error C2065: 'newNumber': undeclared identifier
+D:\Torrens University\ADS103\Week8\ADS Week7\AVL.cpp(156,58): error C2065: 'newNumber': undeclared identifier
+D:\Torrens University\ADS103\Week8\ADS Week7\AVL.cpp(161,60): error C2065: 'newNumber': undeclared identifier
+  BST.cpp
+D:\Torrens University\ADS103\Week8\ADS Week7\BST.cpp(123,20): error C2039: 'studentID': is not a member of 'Node'
+D:\Torrens University\ADS103\Week8\ADS Week7\Node.h(7): message : see declaration of 'Node'
+D:\Torrens University\ADS103\Week8\ADS Week7\BST.cpp(137,20): error C2039: 'studentID': is not a member of 'Node'
+D:\Torrens University\ADS103\Week8\ADS Week7\Node.h(7): message : see declaration of 'Node'
+D:\Torrens University\ADS103\Week8\ADS Week7\BST.cpp(149,20): error C2039: 'studentID': is not a member of 'Node'
+D:\Torrens University\ADS103\Week8\ADS Week7\Node.h(7): message : see declaration of 'Node'
+  Source.cpp
+D:\Torrens University\ADS103\Week8\ADS Week7\Source.cpp(8,13): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Node.cpp
+  Generating Code...
